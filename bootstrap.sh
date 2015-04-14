@@ -33,10 +33,3 @@ systemctl restart mysqld
 #set password to root 
 
 /usr/bin/mysqladmin -u root password 'password'
-
-
-# Forwards the files to the vagrant home. 
-if ! [ -L /var/www ]; then
-  rm -rf /var/www
-  ln -fs /vagrant /var/www
-fi
