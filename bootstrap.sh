@@ -33,3 +33,11 @@ systemctl restart mysqld
 #set password to root 
 
 /usr/bin/mysqladmin -u root password 'password'
+
+
+## Setup Symbolic Linking 
+## =================================================================
+echo "Setting up Symoblic Linking"
+ rm -rf /var/www/html
+ ln -s /vagrant/src /var/www/html
+
